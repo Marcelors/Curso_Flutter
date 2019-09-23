@@ -15,7 +15,7 @@ class ProductData {
     title = snapshot.data["title"];
     price = snapshot.data["price"] + 0.0;
     imagens = snapshot.data["imagens"];
-    sizes = snapshot.data["description"];
+    sizes = snapshot.data["size"];
     description = snapshot.data["description"];
   }
 }
