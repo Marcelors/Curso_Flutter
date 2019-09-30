@@ -109,7 +109,7 @@ class _ProductDetailScreenState extends State<ProductDetailScreen> {
                   height: 44.0,
                   child: RaisedButton(
                     onPressed: size != null
-                        ? () {
+                        ? () async {
                             if (UserModel.of(context).isLoggedIn()) {
 
                               CartProduct cartProduct = CartProduct();

@@ -13,11 +13,12 @@ class CartModel extends Model {
 
   static CartModel of(BuildContext context) => ScopedModel.of<CartModel>(context);
 
+  bool isLoading = false;
 
-  void addCartItem(CartProduct cartProduct) {
+  void addCartItem(CartProduct cartProduct) async {
     products.add(cartProduct);
 
-    Firestore.instance
+    await Firestore.instance
         .collection("users")
         .document(user.firebaseUser.uid)
         .collection("cart")
