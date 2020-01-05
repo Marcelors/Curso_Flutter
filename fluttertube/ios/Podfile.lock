@@ -1,0 +1,35 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_youtube (0.0.1):
+    - Flutter
+    - XCDYouTubeKit
+  - shared_preferences (0.0.1):
+    - Flutter
+  - XCDYouTubeKit (2.8.2)
+
+DEPENDENCIES:
+  - Flutter (from `.symlinks/flutter/ios`)
+  - flutter_youtube (from `.symlinks/plugins/flutter_youtube/ios`)
+  - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
+
+SPEC REPOS:
+  trunk:
+    - XCDYouTubeKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  flutter_youtube:
+    :path: ".symlinks/plugins/flutter_youtube/ios"
+  shared_preferences:
+    :path: ".symlinks/plugins/shared_preferences/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_youtube: 142f8d5af0a11963bdc73e13bcae6eb78db746c2
+  shared_preferences: 430726339841afefe5142b9c1f50cb6bd7793e01
+  XCDYouTubeKit: 79baadb0560673a67c771eba45f83e353fd12c1f
+
+PODFILE CHECKSUM: 64b2109b760ac9073c864e2a8278e6464efaa219
+
+COCOAPODS: 1.8.4
