@@ -1,7 +1,10 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_youtube/flutter_youtube.dart';
 import 'package:fluttertube/blocs/favorite_bloc.dart';
 import 'package:fluttertube/models/video.dart';
+
+import '../api.dart';
 
 class VideoTile extends StatelessWidget {
   final Video video;
@@ -12,7 +15,11 @@ class VideoTile extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloc = BlocProvider.getBloc<FavoriteBloc>();
 
-    return Container(
+    return GestureDetector(
+      onTap: (){
+        FlutterYoutube.playYoutubeVideoById(apiKey: API_KEY, videoId: video.id);
+      },
+        child: Container(
       margin: EdgeInsets.symmetric(vertical: 4),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -70,6 +77,6 @@ class VideoTile extends StatelessWidget {
           )
         ],
       ),
-    );
+    ));
   }
 }
