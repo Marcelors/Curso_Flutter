@@ -44,7 +44,7 @@ class _CategoryViewState extends State<CategoryView> {
             icon: Icon(Icons.arrow_forward_ios),
             color: Colors.white,
             disabledColor: Colors.white30,
-            onPressed: _category > categories.length - 1 ? selectForward : null)
+            onPressed: _category < categories.length - 1 ? selectForward : null)
       ],
     );
   }

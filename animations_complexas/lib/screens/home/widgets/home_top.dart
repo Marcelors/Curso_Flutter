@@ -12,7 +12,7 @@ class HomeTop extends StatelessWidget {
     final screenSize = MediaQuery.of(context).size;
 
     return Container(
-      height: screenSize.height * 0.3,
+      height: screenSize.height * 0.4,
       decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage("images/background.jpg"), fit: BoxFit.cover)),
