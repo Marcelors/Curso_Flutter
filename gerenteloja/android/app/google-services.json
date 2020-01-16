@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "917903371855",
+    "firebase_url": "https://lojaflutter-cdd39.firebaseio.com",
+    "project_id": "lojaflutter-cdd39",
+    "storage_bucket": "lojaflutter-cdd39.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917903371855:android:b230dd38ac9d6230b5043a",
+        "android_client_info": {
+          "package_name": "com.marcelors.gerenteloja"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917903371855-7v9gvtra6n8sgqk73o7e9pislirslhjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEjaeeauXg7tzoIhIauvtWwDRVkzqmd9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917903371855-7v9gvtra6n8sgqk73o7e9pislirslhjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917903371855:android:48cff51f5423cdeeb5043a",
+        "android_client_info": {
+          "package_name": "com.marcelors.loja_virtual"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917903371855-7v9gvtra6n8sgqk73o7e9pislirslhjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEjaeeauXg7tzoIhIauvtWwDRVkzqmd9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917903371855-7v9gvtra6n8sgqk73o7e9pislirslhjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
