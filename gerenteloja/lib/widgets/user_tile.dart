@@ -1,6 +1,4 @@
-import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
-import 'package:gerenteloja/blocs/user_bloc.dart';
 import 'package:shimmer/shimmer.dart';
 
 class UserTile extends StatelessWidget {

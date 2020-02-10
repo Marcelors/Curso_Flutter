@@ -1,7 +1,9 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
 import 'package:flutter/material.dart';
+import 'package:gerenteloja/blocs/orders_bloc.dart';
 import 'package:gerenteloja/blocs/user_bloc.dart';
 import 'package:gerenteloja/tabs/users_tab.dart';
+import 'package:gerenteloja/tabs/orders_tab.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -14,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   int _page = 0;
 
   UserBloc _userBloc;
+  OrdersBloc _ordersBloc;
 
 
   @override
@@ -22,6 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     _pageController = PageController();
     _userBloc = UserBloc();
+    _ordersBloc = OrdersBloc();
   }
 
 
@@ -68,18 +72,21 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
         child: BlocProvider<UserBloc>(
           bloc: _userBloc,
-          child: PageView(
-            controller: _pageController,
-            onPageChanged: (p){
-              setState(() {
-                _page = p;
-              });
-            },
-            children: <Widget>[
-              UsersTab(),
-              Container(),
-              Container()
-            ],
+          child: BlocProvider<OrdersBloc>(
+            bloc: _ordersBloc,
+            child: PageView(
+              controller: _pageController,
+              onPageChanged: (p){
+                setState(() {
+                  _page = p;
+                });
+              },
+              children: <Widget>[
+                UsersTab(),
+                OrdersTab(),
+                Container()
+              ],
+            ),
           ),
         ),
       ),
